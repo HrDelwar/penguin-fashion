@@ -1,0 +1,242 @@
+/*set default style and font for body and headding*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+/*nav item color, hover and active color set*/
+
+.logo img {
+    width: 300px;
+}
+
+.fixed-top {
+    z-index: 1050;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(59, 18, 149, 0.85);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(240, 3, 137, 0.9);
+}
+
+/*make banner image responsive*/
+.banner{
+    max-width: 450px;
+}
+
+/*bg color set for subscriber area*/
+
+.bg-subscribe {
+    background: linear-gradient(45deg, #bb1ba2, #3c38b5);
+}
+
+/*all product price color set*/
+
+.price-color {
+    color: #FF136F;
+}
+/*shop img width set*/
+.shope img{
+    width: 80px;
+}
+/*padding top set for section */
+
+.pt-6 {
+    padding-top: 4rem;
+}
+
+/*custom button packge*/
+
+.btn-custom {
+    background: linear-gradient(45deg, #bd109a, #b71919);
+    padding: 8px 26px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 7px;
+    position: relative;
+    border: 0;
+    overflow: hidden;
+}
+
+/*set before shape when button hovered*/
+
+.btn-custom::before {
+    display: inline-flex;
+    z-index: 10;
+    content: "";
+    background: #203647;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all .3s;
+}
+
+/*set after shape when button hovered*/
+
+.btn-custom::after {
+    display: inline-flex;
+    z-index: 10;
+    content: "";
+    background: #203647;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -100%;
+    transition: all .3s;
+}
+
+/*set hover effect for button*/
+
+.btn-custom:hover::after {
+    left: -50%;
+}
+
+.btn-custom:hover:before {
+    right: -50%;
+}
+
+.btn-carosuel::after, .btn-carosuel::before {
+    background: #ff136f;
+}
+
+/*subscribe btn bg-color set*/
+
+.bg-subscribe-btn {
+    background: linear-gradient( -45deg, #1b1e24, #072c33) !important;
+}
+
+.bg-subscribe-btn::after, .bg-subscribe-btn::before {
+    background: #ff136f;
+}
+
+/*set high z-index for showing button text when it hover*/
+
+span.high-z-index {
+	position: relative;
+	z-index: 1030;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+}
+
+/*override button hover color*/
+
+.btn-custom:hover {
+    color: #fff;
+}
+
+/*romove shadow and outline when button focused*/
+
+.btn-custom:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*gradient text*/
+
+.text-gradient {
+	background: linear-gradient(45deg, #6e16aa, #04d0ff 80%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.text-gradient-subscribe{
+    background: linear-gradient(45deg, #fff, #04d0ff 80%) ;
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+/*hover effect set for every card*/
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+/*set custom box-shadow for product card*/
+
+.card-2 {
+    border: 0;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, .71) !important;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+/*style card image container for make image rasponsive*/
+.card-img-container {
+	max-width: 340px;
+	max-height: 375px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.card-img-container > img{
+    transition: all .3s;
+}
+.card-img-container > img:hover{
+    transform: scale(1.1);
+}
+/*remove border for product card footer*/
+
+.card-2 .card-footer {
+    border-top: 0 !important;
+}
+
+/*set height for subscribe section*/
+
+.h-300 {
+    height: 300px;
+}
+
+/*subscribe section shape*/
+
+.shape {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, pink, lime);
+    opacity: .2;
+    transition: all .3s;
+}
+
+.shape-1 {
+    bottom: 100%;
+    left: 70%;
+}
+
+.shape-2 {
+    top: 100%;
+    right: 70%;
+}
+
+.subscribe:hover>.shape-1, .subscribe:hover>.shape-2 {
+    transform: scale(1.5);
+}
